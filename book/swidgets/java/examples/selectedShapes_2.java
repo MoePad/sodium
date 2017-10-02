@@ -5,7 +5,7 @@ import nz.sodium.*;
 
 public class selectedShapes_2 {
     public static void main(String[] args) {
-        JFrame frame = new JFrame("add");
+        JFrame frame = new JFrame("selected shapes");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new FlowLayout());
 
