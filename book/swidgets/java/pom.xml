@@ -24,22 +24,22 @@
       <id>airline1</id>
       <build>
         <plugins>
-          <plugin>  
-           <groupId>org.codehaus.mojo</groupId>  
-           <artifactId>exec-maven-plugin</artifactId>  
-           <version>1.1.1</version>  
-           <executions>  
-            <execution>  
-             <phase>test</phase>  
-             <goals>  
-              <goal>java</goal>  
-             </goals>  
-             <configuration>  
-              <mainClass>airline1</mainClass>  
-             </configuration>  
-            </execution>  
-           </executions>  
-          </plugin>  
+          <plugin>
+           <groupId>org.codehaus.mojo</groupId>
+           <artifactId>exec-maven-plugin</artifactId>
+           <version>1.1.1</version>
+           <executions>
+            <execution>
+             <phase>test</phase>
+             <goals>
+              <goal>java</goal>
+             </goals>
+             <configuration>
+              <mainClass>airline1</mainClass>
+             </configuration>
+            </execution>
+           </executions>
+          </plugin>
         </plugins>
       </build>
     </profile>
@@ -47,22 +47,22 @@
       <id>airline2</id>
       <build>
         <plugins>
-          <plugin>  
-           <groupId>org.codehaus.mojo</groupId>  
-           <artifactId>exec-maven-plugin</artifactId>  
-           <version>1.1.1</version>  
-           <executions>  
-            <execution>  
-             <phase>test</phase>  
-             <goals>  
-              <goal>java</goal>  
-             </goals>  
-             <configuration>  
-              <mainClass>airline2</mainClass>  
-             </configuration>  
-            </execution>  
-           </executions>  
-          </plugin>  
+          <plugin>
+           <groupId>org.codehaus.mojo</groupId>
+           <artifactId>exec-maven-plugin</artifactId>
+           <version>1.1.1</version>
+           <executions>
+            <execution>
+             <phase>test</phase>
+             <goals>
+              <goal>java</goal>
+             </goals>
+             <configuration>
+              <mainClass>airline2</mainClass>
+             </configuration>
+            </execution>
+           </executions>
+          </plugin>
         </plugins>
       </build>
     </profile>
@@ -70,22 +70,22 @@
       <id>clearfield</id>
       <build>
         <plugins>
-          <plugin>  
-           <groupId>org.codehaus.mojo</groupId>  
-           <artifactId>exec-maven-plugin</artifactId>  
-           <version>1.1.1</version>  
-           <executions>  
-            <execution>  
-             <phase>test</phase>  
-             <goals>  
-              <goal>java</goal>  
-             </goals>  
-             <configuration>  
+          <plugin>
+           <groupId>org.codehaus.mojo</groupId>
+           <artifactId>exec-maven-plugin</artifactId>
+           <version>1.1.1</version>
+           <executions>
+            <execution>
+             <phase>test</phase>
+             <goals>
+              <goal>java</goal>
+             </goals>
+             <configuration>
               <mainClass>clearfield</mainClass>
-             </configuration>  
-            </execution>  
-           </executions>  
-          </plugin>  
+             </configuration>
+            </execution>
+           </executions>
+          </plugin>
         </plugins>
       </build>
     </profile>
@@ -93,22 +93,22 @@
       <id>label</id>
       <build>
         <plugins>
-          <plugin>  
-           <groupId>org.codehaus.mojo</groupId>  
-           <artifactId>exec-maven-plugin</artifactId>  
-           <version>1.1.1</version>  
-           <executions>  
-            <execution>  
-             <phase>test</phase>  
-             <goals>  
-              <goal>java</goal>  
-             </goals>  
-             <configuration>  
+          <plugin>
+           <groupId>org.codehaus.mojo</groupId>
+           <artifactId>exec-maven-plugin</artifactId>
+           <version>1.1.1</version>
+           <executions>
+            <execution>
+             <phase>test</phase>
+             <goals>
+              <goal>java</goal>
+             </goals>
+             <configuration>
               <mainClass>label</mainClass>
-             </configuration>  
-            </execution>  
-           </executions>  
-          </plugin>  
+             </configuration>
+            </execution>
+           </executions>
+          </plugin>
         </plugins>
       </build>
     </profile>
@@ -116,22 +116,22 @@
       <id>reverse</id>
       <build>
         <plugins>
-          <plugin>  
-           <groupId>org.codehaus.mojo</groupId>  
-           <artifactId>exec-maven-plugin</artifactId>  
-           <version>1.1.1</version>  
-           <executions>  
-            <execution>  
-             <phase>test</phase>  
-             <goals>  
-              <goal>java</goal>  
-             </goals>  
-             <configuration>  
+          <plugin>
+           <groupId>org.codehaus.mojo</groupId>
+           <artifactId>exec-maven-plugin</artifactId>
+           <version>1.1.1</version>
+           <executions>
+            <execution>
+             <phase>test</phase>
+             <goals>
+              <goal>java</goal>
+             </goals>
+             <configuration>
               <mainClass>reverse</mainClass>
-             </configuration>  
-            </execution>  
-           </executions>  
-          </plugin>  
+             </configuration>
+            </execution>
+           </executions>
+          </plugin>
         </plugins>
       </build>
     </profile>
@@ -139,22 +139,22 @@
       <id>gamechat</id>
       <build>
         <plugins>
-          <plugin>  
-           <groupId>org.codehaus.mojo</groupId>  
-           <artifactId>exec-maven-plugin</artifactId>  
-           <version>1.1.1</version>  
-           <executions>  
-            <execution>  
-             <phase>test</phase>  
-             <goals>  
-              <goal>java</goal>  
-             </goals>  
-             <configuration>  
+          <plugin>
+           <groupId>org.codehaus.mojo</groupId>
+           <artifactId>exec-maven-plugin</artifactId>
+           <version>1.1.1</version>
+           <executions>
+            <execution>
+             <phase>test</phase>
+             <goals>
+              <goal>java</goal>
+             </goals>
+             <configuration>
               <mainClass>gamechat</mainClass>
-             </configuration>  
-            </execution>  
-           </executions>  
-          </plugin>  
+             </configuration>
+            </execution>
+           </executions>
+          </plugin>
         </plugins>
       </build>
     </profile>
@@ -162,22 +162,22 @@
       <id>redgreen</id>
       <build>
         <plugins>
-          <plugin>  
-           <groupId>org.codehaus.mojo</groupId>  
-           <artifactId>exec-maven-plugin</artifactId>  
-           <version>1.1.1</version>  
-           <executions>  
-            <execution>  
-             <phase>test</phase>  
-             <goals>  
-              <goal>java</goal>  
-             </goals>  
-             <configuration>  
+          <plugin>
+           <groupId>org.codehaus.mojo</groupId>
+           <artifactId>exec-maven-plugin</artifactId>
+           <version>1.1.1</version>
+           <executions>
+            <execution>
+             <phase>test</phase>
+             <goals>
+              <goal>java</goal>
+             </goals>
+             <configuration>
               <mainClass>redgreen</mainClass>
-             </configuration>  
-            </execution>  
-           </executions>  
-          </plugin>  
+             </configuration>
+            </execution>
+           </executions>
+          </plugin>
         </plugins>
       </build>
     </profile>
@@ -185,22 +185,22 @@
       <id>translate</id>
       <build>
         <plugins>
-          <plugin>  
-           <groupId>org.codehaus.mojo</groupId>  
-           <artifactId>exec-maven-plugin</artifactId>  
-           <version>1.1.1</version>  
-           <executions>  
-            <execution>  
-             <phase>test</phase>  
-             <goals>  
-              <goal>java</goal>  
-             </goals>  
-             <configuration>  
+          <plugin>
+           <groupId>org.codehaus.mojo</groupId>
+           <artifactId>exec-maven-plugin</artifactId>
+           <version>1.1.1</version>
+           <executions>
+            <execution>
+             <phase>test</phase>
+             <goals>
+              <goal>java</goal>
+             </goals>
+             <configuration>
               <mainClass>translate</mainClass>
-             </configuration>  
-            </execution>  
-           </executions>  
-          </plugin>  
+             </configuration>
+            </execution>
+           </executions>
+          </plugin>
         </plugins>
       </build>
     </profile>
@@ -208,22 +208,22 @@
       <id>spinner</id>
       <build>
         <plugins>
-          <plugin>  
-           <groupId>org.codehaus.mojo</groupId>  
-           <artifactId>exec-maven-plugin</artifactId>  
-           <version>1.1.1</version>  
-           <executions>  
-            <execution>  
-             <phase>test</phase>  
-             <goals>  
-              <goal>java</goal>  
-             </goals>  
-             <configuration>  
+          <plugin>
+           <groupId>org.codehaus.mojo</groupId>
+           <artifactId>exec-maven-plugin</artifactId>
+           <version>1.1.1</version>
+           <executions>
+            <execution>
+             <phase>test</phase>
+             <goals>
+              <goal>java</goal>
+             </goals>
+             <configuration>
               <mainClass>spinner</mainClass>
-             </configuration>  
-            </execution>  
-           </executions>  
-          </plugin>  
+             </configuration>
+            </execution>
+           </executions>
+          </plugin>
         </plugins>
       </build>
     </profile>
@@ -231,22 +231,22 @@
       <id>nonegative</id>
       <build>
         <plugins>
-          <plugin>  
-           <groupId>org.codehaus.mojo</groupId>  
-           <artifactId>exec-maven-plugin</artifactId>  
-           <version>1.1.1</version>  
-           <executions>  
-            <execution>  
-             <phase>test</phase>  
-             <goals>  
-              <goal>java</goal>  
-             </goals>  
-             <configuration>  
+          <plugin>
+           <groupId>org.codehaus.mojo</groupId>
+           <artifactId>exec-maven-plugin</artifactId>
+           <version>1.1.1</version>
+           <executions>
+            <execution>
+             <phase>test</phase>
+             <goals>
+              <goal>java</goal>
+             </goals>
+             <configuration>
               <mainClass>nonegative</mainClass>
-             </configuration>  
-            </execution>  
-           </executions>  
-          </plugin>  
+             </configuration>
+            </execution>
+           </executions>
+          </plugin>
         </plugins>
       </build>
     </profile>
@@ -254,22 +254,22 @@
       <id>add</id>
       <build>
         <plugins>
-          <plugin>  
-           <groupId>org.codehaus.mojo</groupId>  
-           <artifactId>exec-maven-plugin</artifactId>  
-           <version>1.1.1</version>  
-           <executions>  
-            <execution>  
-             <phase>test</phase>  
-             <goals>  
-              <goal>java</goal>  
-             </goals>  
-             <configuration>  
+          <plugin>
+           <groupId>org.codehaus.mojo</groupId>
+           <artifactId>exec-maven-plugin</artifactId>
+           <version>1.1.1</version>
+           <executions>
+            <execution>
+             <phase>test</phase>
+             <goals>
+              <goal>java</goal>
+             </goals>
+             <configuration>
               <mainClass>add</mainClass>
-             </configuration>  
-            </execution>  
-           </executions>  
-          </plugin>  
+             </configuration>
+            </execution>
+           </executions>
+          </plugin>
         </plugins>
       </build>
     </profile>
@@ -277,22 +277,22 @@
       <id>spinme</id>
       <build>
         <plugins>
-          <plugin>  
-           <groupId>org.codehaus.mojo</groupId>  
-           <artifactId>exec-maven-plugin</artifactId>  
-           <version>1.1.1</version>  
-           <executions>  
-            <execution>  
-             <phase>test</phase>  
-             <goals>  
-              <goal>java</goal>  
-             </goals>  
-             <configuration>  
+          <plugin>
+           <groupId>org.codehaus.mojo</groupId>
+           <artifactId>exec-maven-plugin</artifactId>
+           <version>1.1.1</version>
+           <executions>
+            <execution>
+             <phase>test</phase>
+             <goals>
+              <goal>java</goal>
+             </goals>
+             <configuration>
               <mainClass>spinme</mainClass>
-             </configuration>  
-            </execution>  
-           </executions>  
-          </plugin>  
+             </configuration>
+            </execution>
+           </executions>
+          </plugin>
         </plugins>
       </build>
     </profile>
@@ -300,22 +300,68 @@
       <id>formvalidation</id>
       <build>
         <plugins>
-          <plugin>  
-           <groupId>org.codehaus.mojo</groupId>  
-           <artifactId>exec-maven-plugin</artifactId>  
-           <version>1.1.1</version>  
-           <executions>  
-            <execution>  
-             <phase>test</phase>  
-             <goals>  
-              <goal>java</goal>  
-             </goals>  
-             <configuration>  
+          <plugin>
+           <groupId>org.codehaus.mojo</groupId>
+           <artifactId>exec-maven-plugin</artifactId>
+           <version>1.1.1</version>
+           <executions>
+            <execution>
+             <phase>test</phase>
+             <goals>
+              <goal>java</goal>
+             </goals>
+             <configuration>
               <mainClass>formvalidation</mainClass>
-             </configuration>  
-            </execution>  
-           </executions>  
-          </plugin>  
+             </configuration>
+            </execution>
+           </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+    <profile>
+      <id>selectedshapes1</id>
+      <build>
+        <plugins>
+          <plugin>
+           <groupId>org.codehaus.mojo</groupId>
+           <artifactId>exec-maven-plugin</artifactId>
+           <version>1.1.1</version>
+           <executions>
+            <execution>
+             <phase>test</phase>
+             <goals>
+              <goal>java</goal>
+             </goals>
+             <configuration>
+              <mainClass>selectedShapes_1</mainClass>
+             </configuration>
+            </execution>
+           </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+    <profile>
+      <id>selectedshapes2</id>
+      <build>
+        <plugins>
+          <plugin>
+           <groupId>org.codehaus.mojo</groupId>
+           <artifactId>exec-maven-plugin</artifactId>
+           <version>1.1.1</version>
+           <executions>
+            <execution>
+             <phase>test</phase>
+             <goals>
+              <goal>java</goal>
+             </goals>
+             <configuration>
+              <mainClass>selectedShapes_2</mainClass>
+             </configuration>
+            </execution>
+           </executions>
+          </plugin>
         </plugins>
       </build>
     </profile>

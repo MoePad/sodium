@@ -166,4 +166,24 @@
         </java>
     </target>
 
+    <target name="selectedshapes1" depends="compile-examples">
+        <java classname="selectedShapes_1" fork="true">
+            <classpath>
+                <pathelement path="examples"/>
+                <pathelement path="swidgets/swidgets.jar"/>
+                <pathelement path="../../../java/sodium.jar"/>
+            </classpath>
+        </java>
+    </target>
+
+    <target name="selectedshapes2" depends="compile-examples">
+        <java classname="selectedShapes_2" fork="true">
+            <classpath>
+                <pathelement path="examples"/>
+                <pathelement path="swidgets/swidgets.jar"/>
+                <pathelement path="../../../java/sodium.jar"/>
+            </classpath>
+        </java>
+    </target>
+
 </project>
