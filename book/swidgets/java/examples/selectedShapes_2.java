@@ -10,7 +10,7 @@ public class selectedShapes_2 {
         frame.setLayout(new FlowLayout());
 
         SButton shape_1 = new SButton("Shape 1");
-        SButton shape_2 = new SButton("Shape 1");
+        SButton shape_2 = new SButton("Shape 2");
         SButton emptySpace = new SButton("Empty Space");
 
         Stream<String> shape1Selected = shape_1.sClicked.map(u -> "Shape 1 selected");
