@@ -18,26 +18,25 @@ public class dynamic_list {
           SButton rmBtn = new SButton("Remove");
           STextField input = new STextField("");
 
-
-          CellLoop<Cell<List<String>>> dynamicList = new CellLoop<>();
+          CellLoop<List<String>> dynamicList = new CellLoop<>();
 
           Stream<String> sAdd = addBtn.sClicked.snapshot(input.text, (u, t) -> t);
 
-          Stream<Cell<List<String>>> sList = sAdd.snapshot(dynamicList,
+          Stream<List<String>> sList = sAdd.snapshot(dynamicList,
                     (text, cellList) -> {
-                      List<String> currentList = cellList.sample();
-                      currentList.add(text);
-                      return new Cell<List<String>>(currentList);
+                      cellList.add(text);
+                      return cellList;
                     });
 
-          Cell<String> currentValue = Cell.switchC(dynamicList).map(list -> {
+          Cell<String> currentValue = dynamicList.map(list -> {
               String returnString = "";
               for(String s : list) {
                 returnString += s + " ";
               }
               return returnString;
             });
-          dynamicList.loop(sList.hold(new Cell<List<String>>(new ArrayList<>())));
+
+          dynamicList.loop(sList.hold(new ArrayList<>()));
 
           SLabel lblSelection = new SLabel(currentValue);
 
