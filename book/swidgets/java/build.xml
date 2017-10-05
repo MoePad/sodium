@@ -195,4 +195,14 @@
             </classpath>
         </java>
     </target>
+
+    <target name="dynamiclist" depends="compile-examples">
+        <java classname="dynamic_list" fork="true">
+            <classpath>
+                <pathelement path="examples"/>
+                <pathelement path="swidgets/swidgets.jar"/>
+                <pathelement path="../../../java/sodium.jar"/>
+            </classpath>
+        </java>
+    </target>
 </project>
