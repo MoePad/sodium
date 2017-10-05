@@ -186,4 +186,13 @@
         </java>
     </target>
 
+    <target name="avreceiver" depends="compile-examples">
+        <java classname="avreceiver" fork="true">
+            <classpath>
+                <pathelement path="examples"/>
+                <pathelement path="swidgets/swidgets.jar"/>
+                <pathelement path="../../../java/sodium.jar"/>
+            </classpath>
+        </java>
+    </target>
 </project>
