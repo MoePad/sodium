@@ -21,12 +21,16 @@ public class dynamic_list {
           CellLoop<List<String>> dynamicList = new CellLoop<>();
 
           Stream<String> sAdd = addBtn.sClicked.snapshot(input.text, (u, t) -> t);
+          Stream<List<String>> sRm = rmBtn.sClicked.snapshot(dynamicList, (u, list) -> {
+            list.remove(list.size() - 1);
+            return list;
+          });
 
           Stream<List<String>> sList = sAdd.snapshot(dynamicList,
                     (text, cellList) -> {
                       cellList.add(text);
                       return cellList;
-                    });
+                    }).orElse(sRm);
 
           Cell<String> currentValue = dynamicList.map(list -> {
               String returnString = "";
@@ -38,12 +42,12 @@ public class dynamic_list {
 
           dynamicList.loop(sList.hold(new ArrayList<>()));
 
-          SLabel lblSelection = new SLabel(currentValue);
+          SLabel lblList = new SLabel(currentValue);
 
           frame.add(rmBtn);
           frame.add(addBtn);
           frame.add(input);
-          frame.add(lblSelection);
+          frame.add(lblList);
         });
 
         frame.setSize(400, 160);

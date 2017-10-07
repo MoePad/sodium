@@ -205,4 +205,14 @@
             </classpath>
         </java>
     </target>
+
+    <target name="funcswitch" depends="compile-examples">
+        <java classname="functionality_switch" fork="true">
+            <classpath>
+                <pathelement path="examples"/>
+                <pathelement path="swidgets/swidgets.jar"/>
+                <pathelement path="../../../java/sodium.jar"/>
+            </classpath>
+        </java>
+    </target>
 </project>
