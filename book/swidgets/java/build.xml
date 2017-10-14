@@ -245,4 +245,14 @@
             </classpath>
         </java>
     </target>
+
+    <target name="continuoustime4" depends="compile-examples">
+        <java classname="continuous_time_4" fork="true">
+            <classpath>
+                <pathelement path="examples"/>
+                <pathelement path="swidgets/swidgets.jar"/>
+                <pathelement path="../../../java/sodium.jar"/>
+            </classpath>
+        </java>
+    </target>
 </project>

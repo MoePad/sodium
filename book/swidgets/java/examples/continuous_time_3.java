@@ -7,11 +7,14 @@ import java.util.*;
 
 public class continuous_time_3 {
     public static void main(String[] args) throws InterruptedException {
-        setUpLogic();
+        Ball ball = setUpBall();
+        ball.height.listen(e -> {
+            if(e <= 0.0) System.exit(0);
+        });
         loop();
     }
 
-    private static void setUpLogic() {
+    private static Ball setUpBall() {
         JFrame frame = new JFrame("Continuous Time 3");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new BoxLayout(frame.getContentPane(), BoxLayout.Y_AXIS));
@@ -28,6 +31,7 @@ public class continuous_time_3 {
         frame.add(lblHeight);
         frame.setSize(400, 160);
         frame.setVisible(true);
+        return ball;
     }
 
     static Lambda1<Double, Double> velocity = (seconds) -> 9.81 * seconds;
