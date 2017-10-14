@@ -215,4 +215,34 @@
             </classpath>
         </java>
     </target>
+
+    <target name="continuoustime1" depends="compile-examples">
+        <java classname="continuous_time_1" fork="true">
+            <classpath>
+                <pathelement path="examples"/>
+                <pathelement path="swidgets/swidgets.jar"/>
+                <pathelement path="../../../java/sodium.jar"/>
+            </classpath>
+        </java>
+    </target>
+
+    <target name="continuoustime2" depends="compile-examples">
+        <java classname="continuous_time_2" fork="true">
+            <classpath>
+                <pathelement path="examples"/>
+                <pathelement path="swidgets/swidgets.jar"/>
+                <pathelement path="../../../java/sodium.jar"/>
+            </classpath>
+        </java>
+    </target>
+
+    <target name="continuoustime3" depends="compile-examples">
+        <java classname="continuous_time_3" fork="true">
+            <classpath>
+                <pathelement path="examples"/>
+                <pathelement path="swidgets/swidgets.jar"/>
+                <pathelement path="../../../java/sodium.jar"/>
+            </classpath>
+        </java>
+    </target>
 </project>
