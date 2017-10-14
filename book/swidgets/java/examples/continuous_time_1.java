@@ -28,9 +28,10 @@ public class continuous_time_1 {
 
     private static void loop() throws InterruptedException {
         long systemSampleRate = 1000L;
+        StreamSink<Unit> sMain = new StreamSink<>();
         while(true) {
-            //jede Transaktion aktualisiert TimerSystem.time (Sodium spezifisch)
-            Transaction.runVoid(() -> {});
+            //jede Transaktion aktualisiert TimerSystem.time (Sodium spezifisch) -> send löst Transaktion aus
+            sMain.send(Unit.UNIT);
             Thread.sleep(systemSampleRate);
         }
     }
