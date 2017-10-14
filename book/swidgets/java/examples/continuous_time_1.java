@@ -29,7 +29,7 @@ public class continuous_time_1 {
     private static void loop() throws InterruptedException {
         long systemSampleRate = 1000L;
         while(true) {
-            //jede Transaktion aktualisert TimerSystem.time
+            //jede Transaktion aktualisiert TimerSystem.time (Sodium spezifisch)
             Transaction.runVoid(() -> {});
             Thread.sleep(systemSampleRate);
         }
