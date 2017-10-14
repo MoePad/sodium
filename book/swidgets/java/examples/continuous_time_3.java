@@ -40,7 +40,6 @@ public class continuous_time_3 {
         private final Cell<Double> secondsAfterCreation;
         private final Cell<Double> height;
         private final Cell<Double> velocity;
-        private final Cell<Boolean> falling = new Cell<>(true);
 
         Ball(TimerSystem timerSystem, final double startHeight) {
             Cell<Double> time = timerSystem.time;
@@ -53,7 +52,6 @@ public class continuous_time_3 {
                 return height;
             });
             this.velocity = secondsAfterCreation.map(continuous_time_3.velocity).lift(height, (v, h) -> h == 0? h : v);
-            this.falling = this.height.map(h -> h > 0? true : false);
         }
 
     }
