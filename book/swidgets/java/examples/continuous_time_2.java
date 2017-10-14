@@ -19,21 +19,18 @@ public class continuous_time_2 {
         TimerSystem timerSystem = new SecondsTimerSystem();
         Cell<Double> time = timerSystem.time;
 
-        final double startHeightMeter = 4000.0;
-
         //v(t) = g*t
         Cell<Double> velocity = time.map(seconds -> 9.81 * seconds);
         //s(t) = 1/2 * g * t^2
-        Cell<Double> height = time.map(seconds -> startHeightMeter - 1.5 * 9.81 * seconds * seconds);
-
+        Cell<Double> distance = time.map(seconds -> 0.5 * 9.81 * seconds * seconds);
 
         SLabel lblSeconds = new SLabel(time.map(value -> Double.toString(value) + " s"));
         SLabel lblSpeed = new SLabel(velocity.map(value -> Double.toString(value) + " m/s"));
-        SLabel lblHeight = new SLabel(height.map(value -> Double.toString(value) + " m"));
+        SLabel lblDistance = new SLabel(distance.map(value -> Double.toString(value) + " m"));
 
         frame.add(lblSeconds);
         frame.add(lblSpeed);
-        frame.add(lblHeight);
+        frame.add(lblDistance);
         frame.setSize(400, 160);
         frame.setVisible(true);
     }
