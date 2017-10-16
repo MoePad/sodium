@@ -504,7 +504,7 @@
             </build>
         </profile>
         <profile>
-            <id>continuoustime4</id>
+            <id>ball</id>
             <build>
                 <plugins>
                     <plugin>
@@ -518,7 +518,7 @@
                                     <goal>java</goal>
                                 </goals>
                                 <configuration>
-                                    <mainClass>continuous_time_4</mainClass>
+                                    <mainClass>ball_sandbox</mainClass>
                                 </configuration>
                             </execution>
                         </executions>

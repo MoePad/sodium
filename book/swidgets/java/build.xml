@@ -246,8 +246,8 @@
         </java>
     </target>
 
-    <target name="continuoustime4" depends="compile-examples">
-        <java classname="continuous_time_4" fork="true">
+    <target name="ball" depends="compile-examples">
+        <java classname="ball_sandbox" fork="true">
             <classpath>
                 <pathelement path="examples"/>
                 <pathelement path="swidgets/swidgets.jar"/>
